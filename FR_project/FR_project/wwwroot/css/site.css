@@ -1,0 +1,113 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: hsla(200,40%,30%,.4);
+    background-image: url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'), url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'), url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'), url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+    background-repeat: repeat-x;
+    background-position: 0 100%, 0 50%, 0 100%, 0 0;
+    background-size: 800px, 500px 200px, 1000px, 400px 260px;
+    animation: 50s para infinite linear;
+}
+
+
+
+h2 {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #eee;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid #000;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 85%;
+}
+
+
+
+
+
+@keyframes para {
+    100% {
+        background-position:  -800px 95%, 500px 50%, 1000px 100%, 400px 0;
+    }
+}
+
+footer {
+    position: fixed;
+    color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #006400;
+    text-align: right;
+    padding: 7px;
+}
+
+.navbar-collapse {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.nav-link {
+    color: black;
+}
+
+span {
+    float: right;
+} 
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 71%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+    .active, .accordion:hover {
+        background-color: #ccc;
+        width: 71%;
+    }
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    width: 71%;
+}
+

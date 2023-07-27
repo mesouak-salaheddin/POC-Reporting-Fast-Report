@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="06/19/2023 10:07:39" ReportInfo.Modified="06/19/2023 11:24:08" ReportInfo.CreatorVersion="2023.2.0.0">
+  <Dictionary>
+    <BusinessObjectDataSource Name="categoriesList" ReferenceName="categoriesList" DataType="System.Int32" Enabled="true">
+      <Column Name="Id" DataType="System.Int32"/>
+      <Column Name="Category" DataType="System.String"/>
+      <Column Name="NbCategory" DataType="System.Int32"/>
+    </BusinessObjectDataSource>
+    <BusinessObjectDataSource Name="entrepriseList" ReferenceName="entrepriseList" DataType="System.Int32" Enabled="true">
+      <Column Name="Id" DataType="System.Int32"/>
+      <Column Name="Name" DataType="System.String"/>
+      <Column Name="Adresse" DataType="System.String"/>
+      <Column Name="Telephone" DataType="System.String"/>
+      <Column Name="Mail" DataType="System.String"/>
+    </BusinessObjectDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="75.6">
+      <PictureObject Name="Picture1" Left="18.9" Width="75.6" Height="75.6" ImageFormat="Png" Image="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"/>
+      <TextObject Name="Text1" Left="170.1" Top="28.35" Width="330.75" Height="28.35" Text="Liste des categories de COFORET" HorzAlign="Center" Font="Arial, 12pt, style=Bold, Underline"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="79.6" Width="718.2"/>
+    <DataBand Name="Data1" Top="83.6" Width="718.2" Height="122.85">
+      <TextObject Name="Text19" Left="9.45" Top="9.45" Width="151.2" Height="18.9" Fill.Color="BlanchedAlmond" Text="Nom de l'entreprise:" Font="Arial, 8pt, style=Bold, Underline"/>
+      <TextObject Name="Text3" Left="9.45" Top="28.35" Width="151.2" Height="28.35" Fill.Color="BlanchedAlmond" Text="Adresse de l'entreprise:" Font="Arial, 8pt, style=Bold, Underline"/>
+      <TextObject Name="Text5" Left="160.65" Top="28.35" Width="198.45" Height="28.35" Fill.Color="BlanchedAlmond" Text="[entrepriseList.Adresse]" Font="Arial, 8pt, style=Bold"/>
+      <TextObject Name="Text2" Left="160.65" Top="9.45" Width="198.45" Height="18.9" Fill.Color="BlanchedAlmond" Text="[entrepriseList.Name]" Font="Arial, 8pt, style=Bold"/>
+      <TextObject Name="Text18" Left="359.1" Top="28.35" Width="151.2" Height="28.35" Fill.Color="BlanchedAlmond" Text="Téléphone:" Font="Arial, 8pt, style=Bold, Underline"/>
+      <TextObject Name="Text4" Left="359.1" Top="9.45" Width="151.2" Height="18.9" Fill.Color="BlanchedAlmond" Text="Mail de l'entreprise:" Font="Arial, 8pt, style=Bold, Underline"/>
+      <TextObject Name="Text17" Left="510.3" Top="28.35" Width="170.1" Height="28.35" Fill.Color="BlanchedAlmond" Text="[entrepriseList.Telephone]" Font="Arial, 8pt, style=Bold"/>
+      <TextObject Name="Text6" Left="510.3" Top="9.45" Width="170.1" Height="18.9" Fill.Color="BlanchedAlmond" Text="[entrepriseList.Mail]" Font="Arial, 8pt, style=Bold"/>
+      <TableObject Name="Table1" Left="75.6" Top="85.05" Width="532.98" Height="37.8" Fill.Color="DarkOliveGreen">
+        <TableColumn Name="Column1" Width="177.66"/>
+        <TableColumn Name="Column2" Width="177.66"/>
+        <TableColumn Name="Column3" Width="177.66"/>
+        <TableRow Name="Row1" Height="37.8">
+          <TableCell Name="Cell1" Border.Lines="All" Text="Id de la categorie:" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="White"/>
+          <TableCell Name="Cell2" Border.Lines="All" Text="Nom de la categorie:" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="White"/>
+          <TableCell Name="Cell3" Border.Lines="All" Text="Nombre des produits de cette categorie:" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="White"/>
+        </TableRow>
+      </TableObject>
+      <DataBand Name="Data2" Top="210.45" Width="718.2" Height="18.9" DataSource="categoriesList">
+        <TableObject Name="Table2" Left="75.6" Width="532.98" Height="18.9" Fill.Color="DarkOliveGreen">
+          <TableColumn Name="Column6" Width="177.66"/>
+          <TableColumn Name="Column7" Width="177.66"/>
+          <TableColumn Name="Column8" Width="177.66"/>
+          <TableRow Name="Row2">
+            <TableCell Name="Cell6" Border.Lines="All" Fill.Color="DarkSeaGreen" Text="[categoriesList.Id]" HorzAlign="Center" Font="Arial, 10pt"/>
+            <TableCell Name="Cell7" Border.Lines="All" Fill.Color="DarkSeaGreen" Text="[categoriesList.Category]" HorzAlign="Center" Font="Arial, 10pt"/>
+            <TableCell Name="Cell8" Border.Lines="All" Fill.Color="DarkSeaGreen" Text="[categoriesList.NbCategory]" HorzAlign="Center" Font="Arial, 10pt"/>
+          </TableRow>
+        </TableObject>
+      </DataBand>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="233.35" Width="718.2" Height="18.9">
+      <TextObject Name="Text20" Left="529.2" Width="94.5" Height="18.9" Text="[PageN]" Font="Arial, 10pt"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="07/26/2023 15:15:11" ReportInfo.Modified="07/26/2023 15:15:14" ReportInfo.CreatorVersion="2023.2.17.0">
+  <Dictionary>
+    <BusinessObjectDataSource Name="clientList" ReferenceName="clientList" DataType="System.Collections.Generic.List`1[[FR_project.Models.Client, FR_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" Enabled="true">
+      <Column Name="Id" DataType="System.Int32"/>
+      <Column Name="Name" DataType="System.String"/>
+      <Column Name="Adresse" DataType="System.String"/>
+    </BusinessObjectDataSource>
+    <BusinessObjectDataSource Name="entrepriseList" ReferenceName="entrepriseList" DataType="System.Collections.Generic.List`1[[FR_project.Models.Entreprise, FR_project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" Enabled="true">
+      <Column Name="Id" DataType="System.Int32"/>
+      <Column Name="Name" DataType="System.String"/>
+      <Column Name="Adresse" DataType="System.String"/>
+      <Column Name="Telephone" DataType="System.String"/>
+      <Column Name="Mail" DataType="System.String"/>
+    </BusinessObjectDataSource>
+  </Dictionary>
+</Report>

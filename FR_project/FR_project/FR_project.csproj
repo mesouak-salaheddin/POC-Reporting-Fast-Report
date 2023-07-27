@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FastReport.Data.Postgres" Version="2023.2.0" />
+    <PackageReference Include="FastReport.OpenSource" Version="2023.2.17" />
+    <PackageReference Include="FastReport.OpenSource.Data.Postgres" Version="2021.4.0" />
+    <PackageReference Include="FastReport.OpenSource.Export.PdfSimple" Version="2023.2.17" />
+    <PackageReference Include="FastReport.OpenSource.Web" Version="2023.2.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\reports\Clients\" />
+    <Folder Include="wwwroot\reports\Entreprises\" />
+    <Folder Include="wwwroot\reports\Commandes\" />
+    <Folder Include="wwwroot\reports\Categories\" />
+    <Folder Include="wwwroot\reports\ProductsByCategory\" />
+    <Folder Include="wwwroot\reports\Products\" />
+  </ItemGroup>
+
+</Project>

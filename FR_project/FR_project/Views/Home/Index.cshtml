@@ -1,0 +1,162 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h2>Créez et Imprimez vos rapports en toute simplicité</h2>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+    <div class="accordion-wrapper">
+    <button class="accordion">
+        <h6>General
+                <span class="accordion-icon">+</span>
+        </h6>
+    </button>
+    <div class="panel">
+        <p>
+            <ul class="navbar-sublist">
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <button class="accordion">
+        <h6>COFORET
+        <span class="accordion-icon">+</span>
+        </h6>
+    </button>
+    <div class="panel">
+        <p>
+            <ul class="navbar-sublist">
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CreateEntreprisesReports">Créer Entreprise Report</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="EntreprisesReport">Télécharger Entreprise Report PDF</a>
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <button class="accordion">
+        <h6>Clients de COFORET
+        <span class="accordion-icon">+</span>
+        </h6>
+    </button>
+    <div class="panel">
+        <p>
+            <ul class="navbar-sublist">
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CreateClientsReports">Créer Clients Report</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ClientsReport">Télécharger Clients Report PDF</a>
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <button class="accordion">
+        <h6>Produits de COFORET
+        <span class="accordion-icon">+</span>
+        </h6>
+    </button>
+    <div class="panel">
+        <p>
+            <ul class="navbar-sublist">
+                <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CreateProductsReports">Créer Products Report</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ProductsReport">Télécharger Products Report PDF</a>
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <button class="accordion">
+        <h6>Commandes de COFORET
+        <span class="accordion-icon">+</span>
+        </h6>
+    </button>
+    <div class="panel">
+        <p>
+            <ul class="navbar-sublist">
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CreateCommandesReports">Créer Commandes Report</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CommandesReport">Télécharger Commandes Report PDF</a>
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <button class="accordion">
+        <h6>Catégories des produits de COFORET
+        <span class="accordion-icon">+</span>
+        </h6>
+    </button>
+    <div class="panel">
+        <p>
+            <ul class="navbar-sublist">
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CreateCategoriesReports">Créer Categories Report</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CategoriesReport">Télécharger Categories Report PDF</a>
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <button class="accordion">
+        <h6>Produits filtrés par catégories de COFORET
+        <span class="accordion-icon">+</span>
+        </h6>
+    </button>
+    <div class="panel">
+        <p>
+            <ul class="navbar-sublist">
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CreateProductsByCategoriesReports">Créer Products By Categories Report</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ProductsByCategoriesReport">Télécharger Products By Categories Report PDF</a>
+                </li>
+            </ul>
+        </p>
+    </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                var icon = this.querySelector(".accordion-icon");
+
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    icon.textContent = "+";
+                } else {
+                    panel.style.display = "block";
+                    icon.textContent = "-";
+                }
+            });
+        }
+    </script>
+
+    </div>
